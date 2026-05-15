@@ -1,8 +1,8 @@
 cloud.google.com/go v0.123.0 h1:2NAUJwPR47q+E35uaJeYoNhuNEM9kM8SjgRgdeOJUSE=
 cloud.google.com/go v0.123.0/go.mod h1:xBoMV08QcqUGuPW65Qfm1o9Y4zKZBpGS+7bImXLTAZU=
 github.com/RaveNoX/go-jsoncommentstrip v1.0.0/go.mod h1:78ihd09MekBnJnxpICcwzCMzGrKSKYe4AqU6PDYYpjk=
-github.com/alpacahq/alpaca-trade-api-go/v3 v3.9.1 h1:G2v0C5kTcTQLyih731SJSaRrsItkf0TDoNZsSJliNKs=
-github.com/alpacahq/alpaca-trade-api-go/v3 v3.9.1/go.mod h1:15o3CsYACxBoRu5IKh7OnCkTrf1jWj+eGYsZc44zvIU=
+github.com/alpacahq/alpaca-trade-api-go/v3 v3.10.0 h1:i9qpkb801h+dmg8dsF4vTzcc6/5KYJQCk80U27R7FOw=
+github.com/alpacahq/alpaca-trade-api-go/v3 v3.10.0/go.mod h1:15o3CsYACxBoRu5IKh7OnCkTrf1jWj+eGYsZc44zvIU=
 github.com/apapsch/go-jsonmerge/v2 v2.0.0 h1:axGnT1gRIfimI7gJifB699GoE/oq+F2MU7Dml6nw9rQ=
 github.com/apapsch/go-jsonmerge/v2 v2.0.0/go.mod h1:lvDnEdqiQrp0O42VQGgmlKpxL1AP2+08jFMw88y4klk=
 github.com/bmatcuk/doublestar v1.1.1/go.mod h1:UD6OnuiIn0yFxxA2le/rnRU1G4RaI4UvFv1sNto9p6w=
