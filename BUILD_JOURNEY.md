@@ -54,6 +54,7 @@ Having completed Iteration 5, AntiGravity paused feature development to conduct 
 - **Commercial Hygiene:** Added a proprietary `LICENSE`, configured Dependabot for weekly automation scans, and drafted inner-source `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` guidelines.
 - **Deep Linting Fixes:** Addressed remaining technical debt, including reducing cyclomatic complexity inside our output formatters and squelching all `errcheck` / `gosec` warnings.
 - **Auto-Generated Docs:** Wrote a Cobra Markdown generator (`scripts/gen-docs.go`) to automatically sync CLI help text to the `docs/` folder via `make docs`.
+- **CI Pipeline Stabilisation & Dependency Upgrades:** Restored a fully passing CI build pipeline by resolving an incompatibility between the Go 1.26 toolchain and `golangci-lint` versions, adopting a native `go install` approach. Sequentially merged all pending dependency pull requests for `gjson` (v1.19.0), `oapi-codegen/runtime` (v1.4.1), and `alpaca-trade-api-go/v3` (v3.11.0).
 
 ## Next Steps
 The repository currently sits at the precipice of **Iteration 6 (Multi-Environment & Secure Credential Management)**. The technical debt is zero, the CI pipeline is air-tight, the test scripts are mapped, and the project is fully commercially compliant. AntiGravity is pausing here to gather external feedback before implementing the credential Keystore and context manager.
