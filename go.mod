@@ -4,7 +4,7 @@ go 1.26.0
 
 require (
 	cloud.google.com/go v0.123.0
-	github.com/alpacahq/alpaca-trade-api-go/v3 v3.9.1
+	github.com/alpacahq/alpaca-trade-api-go/v3 v3.11.0
 	github.com/google/uuid v1.6.0
 	github.com/oapi-codegen/runtime v1.4.1
 	github.com/shopspring/decimal v1.4.0
