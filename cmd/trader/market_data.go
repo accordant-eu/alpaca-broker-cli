@@ -26,7 +26,7 @@ var marketDataBarsCmd = &cobra.Command{
 		}
 
 		symbol := strings.ToUpper(args[0])
-				mdStart, _ := cmd.Flags().GetString("start")
+		mdStart, _ := cmd.Flags().GetString("start")
 		mdEnd, _ := cmd.Flags().GetString("end")
 		mdTotalLimit, _ := cmd.Flags().GetInt("total-limit")
 		mdPageLimit, _ := cmd.Flags().GetInt("page-limit")
@@ -90,7 +90,7 @@ var marketDataQuotesCmd = &cobra.Command{
 		}
 
 		symbol := strings.ToUpper(args[0])
-				mdStart, _ := cmd.Flags().GetString("start")
+		mdStart, _ := cmd.Flags().GetString("start")
 		mdEnd, _ := cmd.Flags().GetString("end")
 		mdTotalLimit, _ := cmd.Flags().GetInt("total-limit")
 		mdPageLimit, _ := cmd.Flags().GetInt("page-limit")
@@ -142,7 +142,7 @@ var marketDataTradesCmd = &cobra.Command{
 		}
 
 		symbol := strings.ToUpper(args[0])
-				mdStart, _ := cmd.Flags().GetString("start")
+		mdStart, _ := cmd.Flags().GetString("start")
 		mdEnd, _ := cmd.Flags().GetString("end")
 		mdTotalLimit, _ := cmd.Flags().GetInt("total-limit")
 		mdPageLimit, _ := cmd.Flags().GetInt("page-limit")
