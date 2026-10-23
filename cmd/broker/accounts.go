@@ -110,7 +110,6 @@ Example:
 			return err
 		}
 
-
 		createContactEmail, _ := cmd.Flags().GetString("contact-email")
 		createContactPhone, _ := cmd.Flags().GetString("contact-phone")
 		createContactStreet1, _ := cmd.Flags().GetString("contact-street-1")
@@ -235,34 +234,34 @@ func init() {
 	rootCmd.AddCommand(accountsCmd)
 
 	// list flags
-	accountsListCmd.Flags().String( "query", "", "Space-delimited partial match search (names, emails, account numbers)")
+	accountsListCmd.Flags().String("query", "", "Space-delimited partial match search (names, emails, account numbers)")
 	accountsCmd.AddCommand(accountsListCmd)
 
 	accountsCmd.AddCommand(accountsGetCmd)
 
 	// create flags
-	accountsCreateCmd.Flags().String( "contact-email", "", "Contact email address")
+	accountsCreateCmd.Flags().String("contact-email", "", "Contact email address")
 	_ = accountsCreateCmd.MarkFlagRequired("contact-email") //nolint:errcheck
-	accountsCreateCmd.Flags().String( "contact-phone", "", "Contact phone number (with country code, no hyphens)")
-	accountsCreateCmd.Flags().String( "contact-street-1", "", "Contact street address line 1")
-	accountsCreateCmd.Flags().String( "contact-street-2", "", "Contact street address line 2")
-	accountsCreateCmd.Flags().String( "contact-city", "", "Contact city")
-	accountsCreateCmd.Flags().String( "contact-state", "", "Contact state/province")
-	accountsCreateCmd.Flags().String( "contact-postal", "", "Contact postal code")
+	accountsCreateCmd.Flags().String("contact-phone", "", "Contact phone number (with country code, no hyphens)")
+	accountsCreateCmd.Flags().String("contact-street-1", "", "Contact street address line 1")
+	accountsCreateCmd.Flags().String("contact-street-2", "", "Contact street address line 2")
+	accountsCreateCmd.Flags().String("contact-city", "", "Contact city")
+	accountsCreateCmd.Flags().String("contact-state", "", "Contact state/province")
+	accountsCreateCmd.Flags().String("contact-postal", "", "Contact postal code")
 
-	accountsCreateCmd.Flags().String( "id-given-name", "", "Account owner's first name")
+	accountsCreateCmd.Flags().String("id-given-name", "", "Account owner's first name")
 	_ = accountsCreateCmd.MarkFlagRequired("id-given-name") //nolint:errcheck
-	accountsCreateCmd.Flags().String( "id-family-name", "", "Account owner's last name")
+	accountsCreateCmd.Flags().String("id-family-name", "", "Account owner's last name")
 	_ = accountsCreateCmd.MarkFlagRequired("id-family-name") //nolint:errcheck
-	accountsCreateCmd.Flags().String( "id-dob", "", "Date of birth (YYYY-MM-DD)")
+	accountsCreateCmd.Flags().String("id-dob", "", "Date of birth (YYYY-MM-DD)")
 	_ = accountsCreateCmd.MarkFlagRequired("id-dob") //nolint:errcheck
-	accountsCreateCmd.Flags().String( "id-tax-id", "", "Tax ID / SSN")
-	accountsCreateCmd.Flags().String( "id-tax-type", "", "USA_SSN, AUS_TFN, etc.")
-	accountsCreateCmd.Flags().String( "id-country-tax", "USA", "ISO 3166-1 alpha-3 country of tax residence")
-	accountsCreateCmd.Flags().String( "id-country-birth", "", "ISO 3166-1 alpha-3 country of birth")
-	accountsCreateCmd.Flags().String( "id-country-citizen", "", "ISO 3166-1 alpha-3 country of citizenship")
+	accountsCreateCmd.Flags().String("id-tax-id", "", "Tax ID / SSN")
+	accountsCreateCmd.Flags().String("id-tax-type", "", "USA_SSN, AUS_TFN, etc.")
+	accountsCreateCmd.Flags().String("id-country-tax", "USA", "ISO 3166-1 alpha-3 country of tax residence")
+	accountsCreateCmd.Flags().String("id-country-birth", "", "ISO 3166-1 alpha-3 country of birth")
+	accountsCreateCmd.Flags().String("id-country-citizen", "", "ISO 3166-1 alpha-3 country of citizenship")
 
-	accountsCreateCmd.Flags().String( "funding-source-type", "", "employment_income, investments, etc.")
+	accountsCreateCmd.Flags().String("funding-source-type", "", "employment_income, investments, etc.")
 
 	accountsCmd.AddCommand(accountsCreateCmd)
 }
